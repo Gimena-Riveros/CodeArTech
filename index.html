@@ -1,79 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  links -->
+    <!--    css     -->
     <link rel="stylesheet" href="css/style.css">
-    <!--  fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
-    <title>codeartech</title>
+    <link rel="stylesheet" href="css/mode_dark_light.css">
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <!--    js      defer   -->
+    <script src="js/theme.js" type="text/javascript" defer></script>
+    <title>CodearTech - Home</title>
 </head>
+
 <body>
-    <header class="header container">
-        <div>
-            <h1 class="h1"><a href="#" title="codeartech" class="a">CodeArTech</a></h1>
-        </div>
-        <div>
-            <nav class="nav">
-                <ul class="ul">
-                    <li class="li"><a href="#conocenos" class="a">conocenos</a></li>
-                    <li class="li"><a href="#casosexito" class="a">casos de exito</a></li>
-                    <li class="li"><a href="#trabajemosjuntos" class="a">trabajemos juntos</a></li>
-                    <li class="li"><a href="#contactanos" class="a">contáctanos</a></li>
-                    <li class="li"><a href="#" class="a"></a></li>
+    <div class="contenedor">
+
+        <!-- Encabezado o Header -->
+        <header class="header">
+
+            <div class="logo">
+                <img class="img" src="assets/imgs/triqueta.png" alt="triqueta">
+                <a href="index.html">
+                    <h2><span>CodeAr</span>Tech</h2>
+                </a>
+            </div>
+
+            <button class="abrir" id="abrir">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </button>
+
+            <!-- Menú -->
+            <nav class="nav" id="nav">
+                <button class="cerrar" id="cerrar">
+                    <i class="fa-solid fa-xmark" style="color: #e3eaf4;"></i>
+                </button>
+                <ul class="nav-list">
+                    <li id="myLinks"><a href="know_us.html"><i>Conocenos</i></a></li>
+                    <li id="myLinks"><a href="success_stories.html"><i>Casos de éxito</i></a></li>
+                    <li id="myLinks"><a href="contact_us.html"><i>Contactanos</i></a></li>
+                    <li id="myLinks"><a href=""><i>Codeemos</i></a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="langWrap">
-			<a href="#" language='english' class="active">EN</a>
-			<a href="#" language='spanish'>ES</a>
-			<a href="#" language='italian'>IT</a>
-		</div>
-    </header>  
+            <!--  THEME  -->
+            <label class="switch">
+                <input type="checkbox" id="deslizar" checked>
+                <span class="deslizar"></span>
+            </label>
 
-    <main class="main">
-        <section class="section" id="conocenos">
-            <h2 class="h2 knowUs">KNOW US</h2>
-            <h3 class="h3 potential">we raise your potential</h3>
-            <div class="content">
-                <h2 class="title">Hello World, the first program for every developer</h2>
-                <p class="description">For all those people who enter the world of programming or have a first contact with it, our first great achievement is to print a \"Hello World!\" or \"Hello World!\" on our screen. 
-                <br>
-                This can be defined as the first program for every developer and we even continue to use it as the initial test for every new project. <br>
-                However, the history or why of the origin of the famous \"Hello World\" is somewhat uncertain, we can affirm that its first invocation dates back to the 70s where Brian Kernighan, author of one of the most famous programming books in the history: C Programming Language (1978) and previously, in 1973 a book called A Tutorial Introduction to the Programming Language B, first introduced the example of the famous Hello World.</p>
+        </header>
+
+        <main class="section">
+
+            <!--    1) QUé valores aportamos      -->
+            <div class="section-1">
+                <h1>Desarrollo de software a medida</h1>
+                <h2>que se ajusta 100% a tus necesidades.</h2><br><br>
+                <p><b> Somos una empresa de programación que brinda una variedad de habilidades y conocimientos valiosos
+                        a cualquier proyecto o equipo de desarrollo, para diseñar, construir y mantener páginas de alta
+                        calidad.
+                        <br>
+                        <br>
+                        Buscamos aportar nuevas ideas y enfoques para mejorar la eficiencia, la usabilidad o la
+                        escalabilidad de un sistema, encontrando soluciones innovadores a problemas técnicos.
+                    </b></p>
+                <div class="valor1">
+                    <img src="assets/imgs/valor1.svg" alt="valor1">
+                    <div>
+                        <h3>Desarrollo de sistemas a medida</h3><br>
+                        <p>Las empresas confían en CodeArTech para la transformación digital de sus procesos cambiando
+                            radicalmente la eficiencia de los mismos.</p>
+                    </div>
+                </div>
+                <div class="valor2">
+                    <img src="assets/imgs/valor2.svg" alt="valor2">
+                    <div>
+                        <h3>DevOps</h3> <br>
+                        <p>Despliegue y migraciones. <br><br> Monitoreo y mantenimiento de sistemas. <br><br>
+                            Consultoría de Transformación Digital.</p>
+                    </div>
+                </div>
+                <div class="valor3">
+                    <img src="assets/imgs/valor3.svg" alt="valor3">
+                    <div>
+                        <h3>Aumento de personal de IT</h3><br>
+                        <p>Una alternativa flexible y sin complicaciones para ampliar su equipo de IT. <br> <br>Gestión
+                            de recursos más estrecha. <br><br> No hay inversión en insfraestructura ni costos
+                            adicionales de contratación.</p>
+                    </div>
+                </div>
+
+
             </div>
-            <img src="assets/imgs/triqueta_01.png" alt="triqueta_01">
-        </section>
 
-        <section class="section" id="casosexito">
-            <h2 class="h2">CASOS DE EXITO</h2>
-            <h3 class="h3">elevamos tu potencial</h3>
-            <img src="assets/imgs/triqueta_02.webp" alt="triqueta_02">
-        </section>
 
-        <section class="section" id="trabajemosjuntos">
-            <h2 class="h2">TRABAJEMOS JUNTOS</h2>
-            <h3 class="h3">elevamos tu potencial</h3>
-            <img src="assets/imgs/triqueta_03.jpg" alt="triqueta_03">
-        </section>
+            <!--    2) Carrusel automatico secciones     -->
+            <div class="slider">
+                <!-- <div><h1>Seccion 2</h1></div> -->
+                <ul>
+                    <li class="img_y_texto">
+                        <img src="assets/imgs/Conocenoss.png" alt="conocenos">
+                        <h2 class="nombreseccion">
+                            <a href="know_us.html">Conocenos
+                        </h2>
+                        </a>
+                    </li>
+                    <li class="img_y_texto">
+                        <img src="assets/imgs/casos_de_exito.jpg" alt="negocios">
+                        <h2 class="nombreseccion">
+                            <a href="success_stories.html">Casos de éxito
+                        </h2>
+                        </a>
+                    </li>
+                    <li class="img_y_texto">
+                        <img src="assets/imgs/Contact_us.jpg" alt="contacto">
+                        <h2 class="nombreseccion">
+                            <a href="#">
+                                Contactanos
+                        </h2>
+                        </a>
+                    </li>
+                    <li class="img_y_texto">
+                        <img src="assets/imgs/codea.png" alt="busqueda_trabajo">
+                        <h2 class="nombreseccion">
+                            <a href="#">¡Codeá con nosotros!
+                        </h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <section class="section" id="contactanos">
-            <h2 class="h2">CONTACTENOS</h2>
-            <h3 class="h3">elevamos tu potencial</h3>
-            <img src="assets/imgs/triqueta_04.jpg" alt="triqueta_04">
-        </section>
+            <!--   3) Carrousel manual: opiniones clientes -->
+            <div class="carrousel">
+                <h1>Clientes satisfechos...</h1>
+                <div class="grande">
+                    <div>
+                        <p class="opiniones">“ He estado trabajando con CodeAr por un tiempo en un desarrollo Android e
+                            iOS. Disfruté mucho trabajando con el equipo y estoy feliz con la aplicación que crearon
+                            para mí. Lo que más me impresionó fue el tiempo, ya que lograron terminar el proyecto mucho
+                            antes de la fecha límite. Les recomendaría en cualquier momento.”
+                        </p>
+                        <h4>Antonio Castro</h4>
+                        <h3>Co-Founder FLOP</h3>
+                    </div>
+                    <div>
+                        <p class="opiniones">“ Estoy muy agradecido a CodeAr por ayudarme con el desarrollo de software
+                            de mi empresa. Desde el momento en que presenté mi solicitud hasta la entrega, siempre fui
+                            informado sobre los siguientes pasos. Los resultados del proyecto superaron mis expectativas
+                            más optimistas y espero trabajar más proyectos con ellos en el futuro. ”</p>
+                        <h4>Luis Delgado</h4>
+                        <h3>CTO Virket </h3>
+                    </div>
+                    <div>
+                        <p class="opiniones">“ CodeArTech, un equipo con sentido del valor muy importante para mí.
+                            Contar con su profesionalidad y rapidez en solucionar cualquier incidencia, me da mucha
+                            tranquilidad. Ademas si tienes cualquier incidencia intentan solucionartelo lo antes
+                            posible. Muy recomendable. GRACIAS. ”</p>
+                        <h4>Sebastian Escalante</h4>
+                        <h3>CEO All Sports</h3>
+                    </div>
+                </div>
+                <ul class="puntos">
+                    <li class="punto"><i class="fa-sharp fa-solid fa-circle-dot" style="color: #e3eaf4;"></i></li>
+                    <li class="punto"><i class="fa-sharp fa-solid fa-circle-dot" style="color: #e3eaf4;"></i></li>
+                    <li class="punto"><i class="fa-sharp fa-solid fa-circle-dot" style="color: #e3eaf4;"></i></li>
+                </ul>
+            </div>
 
-        <section class="section" id="up">
-            <a href="#"><h2 class="h2">UP</h2></a>
-            <h3 class="h3">elevamos tu potencial</h3>
-        </section>
-    </main>
-    <footer>
-        <h4>CodeArTech</h4>
-        
-    </footer>
-    <script src="js/db.js"></script>
+
+            <!--   4) Brands de empresas     -->
+            <div class="section-4">
+                <div class="slider-block">
+                    <div class="slide-track">
+                        <div class="slide-block">
+                            <a href="http://www.reposteriacandela.com.ar/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/candela_cafe_mate.png" height="100" width="250"
+                                    alt="Candela_Cafe_Mate" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.caterpillar.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/Caterpillar-Logo.png" height="100" width="250"
+                                    alt="Caterpillar-Logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.spacex.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/space-x-logo.png" height="100" width="250" alt="space-x-logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://buenosaires.gob.ar/inicio/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/Ciudad_de_Buenos_Aires_logo.png" height="100" width="250"
+                                    alt="Ciudad_de_Buenos_Aires_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/raspberry_pi_logo.png" height="100" width="250"
+                                    alt="raspberry_pi_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/netflix.png" height="100" width="250" alt="netflix_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://aws.amazon.com/es/" target="_blank">
+                                <img src="assets/imgs/amazon.png" height="100" width="250" alt="aws_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.nutella.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/logo-nutella.png" height="100" width="250"
+                                    alt="nutella_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="http://www.reposteriacandela.com.ar/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/candela_cafe_mate.png" height="100" width="250"
+                                    alt="Candela_Cafe_Mate" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.caterpillar.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/Caterpillar-Logo.png" height="100" width="250"
+                                    alt="Caterpillar-Logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.spacex.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/space-x-logo.png" height="100" width="250" alt="space-x-logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://buenosaires.gob.ar/inicio/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/Ciudad_de_Buenos_Aires_logo.png" height="100" width="250"
+                                    alt="Ciudad_de_Buenos_Aires_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/raspberry_pi_logo.png" height="100" width="250"
+                                    alt="raspberry_pi_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/netflix.png" height="100" width="250" alt="netflix_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="https://aws.amazon.com/es/" target="_blank">
+                                <img src="assets/imgs/amazon.png" height="100" width="250" alt="aws_logo" />
+                            </a>
+                        </div>
+                        <div class="slide-block">
+                            <a href="">
+                                <img src="assets/imgs/logo-nutella-256.png" height="100" width="250"
+                                    alt="nutella_logo" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--    contact     form    -->
+        <div class="codear-info">
+            <h2><span>CodeAr</span>Tech</h2>
+            <ul>
+                <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+                <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+                <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h3>Contact us</h3>
+            <br>
+            <form>
+                <p>
+                    <label><i>NAME</i></label>
+                    <input type="text" name="name" required placeholder="n a m e . . .">
+                </p>
+                <p>
+                    <label><i>COMPANY</i></label>
+                    <input type="text" name="company" required placeholder="c o m p a n y . . .">
+                </p>
+                <p>
+                    <label><i>EMAIL</i></label>
+                    <input type="email" name="email" required placeholder="e m a i l . . .">
+                </p>
+                <p>
+                    <label><i>PHONE NUMBER</i></label>
+                    <input type="text" name="phone" placeholder="p h o n e . . .">
+                </p>
+                <p class="full">
+                    <label><i>MESSAGE</i></label>
+                    <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+
+        <!--    contact     form    -->
+
+        <footer class="footer">
+            <div class="footer_img">
+                <img src="assets/imgs/triqueta.png" alt="triqueta">
+            </div>
+            <div class="copyright">
+                <h2><span>CodeAr</span>Tech</h2></a> <br>
+                <i>
+                    <p>Code Argentina Tech S.R.L </p> <br>
+                    <p> <!--  script que actualiza el año al actual  -->
+                        <script type="text/javascript">
+                            copyright = new Date();
+                            update = copyright.getFullYear(); document.write("© " + update + " " + "@All rights reserved");
+                        </script>
+                    </p><br>
+                </i>
+            </div>
+            <div class="casos">
+                <a href="success_stories.html">Casos de éxito</a>
+            </div>
+            <div class="valor">
+                <a href="">Aportando valor...</a>
+            </div>
+            <div class="conocenos">
+                <a href="know_us.html">Conocenos!</a>
+            </div>
+            <div class="contactanos">
+                <a href="">Contactanos</a>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://discord.com" target="_blank">
+                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://web.telegram.org" target="_blank">
+                    <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                </a>
+                <br>
+                <a href="">English </a>|<a href=""> Español</a>
+
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
+<!--
+    CAMBIOS REALIZADOS:
+    @ Se agrego theme en header y css, se agrego js para theme. 
+    @ css: width a 100% 
+    @ css: .contenedor saque margen inferior (de 20 a cero) asi pegar footer a botton.
+    @ header li: agregue margin-right 30px. Y padding: 0 20px; 
+    @ header z-index: 1 
+-->
