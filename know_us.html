@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    css     -->
+    <link rel="stylesheet" href="css/know_us.css">
+    <link rel="stylesheet" href="css/mode_dark_light.css">
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <title>know flexbox</title>
+</head>
+
+<body class="contenedor">
+    <!-- Encabezado o Header -->
+    <header class="header">
+
+        <div class="logo">
+            <img class="img" src="assets/imgs/triqueta.png" alt="triqueta">
+            <a href="index.html">
+                <h2><span>CodeAr</span>Tech</h2>
+            </a>
+        </div>
+
+        <button class="abrir" id="abrir">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+        </button>
+
+        <!-- Menú -->
+        <nav class="nav" id="nav">
+            <button class="cerrar" id="cerrar">
+                <i class="fa-solid fa-xmark" style="color: #e3eaf4;"></i>
+            </button>
+            <ul class="nav-list">
+                <li id="myLinks"><a href="know_flexbox.html"><i> Conocenos</i></a></li>
+                <li id="myLinks"><a href=""><i>Casos de éxito</i></a></li>
+                <li id="myLinks"><a href=""><i>Contactanos</i></a></li>
+                <li id="myLinks"><a href=""><i>Dark/Light</i></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="contein contein-cards">
+        <div class="card card-1">
+            <img src="assets/imgs/photo_Gimena.jpg" alt="photo_Gimena" class="img">
+            <h3 class="myname">Person 1</h3>
+            <h4 class="myjob">CEO & Backend Developer</h4>
+            <p class="about">I'm FullStack Developer with Backend
+                orientation. I like to be at the forefront of technology, so I find out about
+                what's new in this techno world on a daily basis.
+            </p>
+            <p class="about">My hobbies are <a href="https://cults3d.com/en/users/DesignHouse3D/creations">3D
+                    printing</a>, assemble puzzle and write in <a href="#">my blog</a>
+                I enjoy music, sharing with friends a delicious cup of coffee and
+                long conversations about . . .
+            </p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="card card-2">
+            <img src="assets/imgs/photo_Vanina.jpg" alt="photo_Vanina" class="img">
+            <h3 class="myname">Person 2</h3>
+            <h4 class="myjob">my job</h4>
+            <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus
+                possimus fugit culpa, adipisci laboriosam?
+            </p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="card card-3">
+            <img src="assets/imgs/photo_Mariano.jpeg" alt="photo_Mariano" class="img">
+            <h3 class="myname">Person 3</h3>
+            <h4 class="myjob">my job</h4>
+            <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus
+                possimus fugit culpa, adipisci laboriosam?
+            </p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="card card-4">
+            <img src="assets/imgs/photo_Luz.png" alt="photo_Luz" class="img">
+            <h3 class="myname">Person 4</h3>
+            <h4 class="myjob">my job</h4>
+            <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus
+                possimus fugit culpa, adipisci laboriosam?
+            </p>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero?</p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!--    contact     form    -->
+    <div class="codear-info">
+        <h2><span>CodeAr</span>Tech</h2>
+        <ul>
+            <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+            <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+            <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+        </ul>
+    </div>
+
+
+    <div class="contact">
+        <h3>Contact us</h3>
+        <br>
+        <form>
+            <p>
+                <label><i>NAME</i></label>
+                <input type="text" name="name" required placeholder="n a m e . . .">
+            </p>
+            <p>
+                <label><i>COMPANY</i></label>
+                <input type="text" name="company" required placeholder="c o m p a n y . . .">
+            </p>
+            <p>
+                <label><i>EMAIL</i></label>
+                <input type="email" name="email" required placeholder="e m a i l . . .">
+            </p>
+            <p>
+                <label><i>PHONE NUMBER</i></label>
+                <input type="text" name="phone" placeholder="p h o n e . . .">
+            </p>
+            <p class="full">
+                <label><i>MESSAGE</i></label>
+                <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
+            </p>
+            <p class="full">
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+
+    <!--    contact     form    -->
+
+    <footer class="footer">
+        <div class="footer_img">
+            <img src="assets/imgs/triqueta.png" alt="triqueta">
+        </div>
+        <div class="copyright">
+            <h2><span>CodeAr</span>Tech</h2></a> <br>
+            <i>
+                <p>Code Argentina Tech S.R.L </p> <br>
+                <p> <!--  script que actualiza el año al actual  -->
+                    <script type="text/javascript">
+                        copyright = new Date();
+                        update = copyright.getFullYear(); document.write("© " + update + " " + "@All rights reserved");
+                    </script>
+                </p><br>
+            </i>
+        </div>
+        <div class="casos">
+            <a href="">Casos de éxito</a>
+        </div>
+        <div class="valor">
+            <a href="">Aportando valor...</a>
+        </div>
+        <div class="conocenos">
+            <a href="know_us.html">Conocenos!</a>
+        </div>
+        <div class="contactanos">
+            <a href="">Contactanos</a>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://discord.com" target="_blank">
+                <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://web.telegram.org" target="_blank">
+                <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+            </a>
+            <br>
+            <a href="">English </a>|<a href=""> Español</a>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
