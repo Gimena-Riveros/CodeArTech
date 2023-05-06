@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    css     -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mode_dark_light.css">
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <!--    js      defer   -->
+    <script src="js/theme.js" type="text/javascript" defer></script>
+    <title>CodearTech - Home</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <!-- Encabezado o Header -->
+        <header class="header">
+
+            <div class="logo">
+                <img class="img" src="assets/imgs/triqueta.png" alt="triqueta">
+                <a href="index.html">
+                    <h2><span>CodeAr</span>Tech</h2>
+                </a>
+            </div>
+
+            <button class="abrir" id="abrir">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </button>
+
+            <!-- Menú -->
+            <nav class="nav" id="nav">
+                <button class="cerrar" id="cerrar">
+                    <i class="fa-solid fa-xmark" style="color: #e3eaf4;"></i>
+                </button>
+                <ul class="nav-list">
+                    <li id="myLinks"><a href="know_us.html"><i>Conocenos</i></a></li>
+                    <li id="myLinks"><a href="success_stories.html"><i>Casos de éxito</i></a></li>
+                    <li id="myLinks"><a href=""><i>Contactanos</i></a></li>
+                    <li id="myLinks"><a href=""><i>Codeemos</i></a></li>
+                </ul>
+            </nav>
+            <!--  THEME  -->
+            <label class="switch">
+                <input type="checkbox" id="deslizar" checked>
+                <span class="deslizar"></span>
+            </label>
+
+        </header>
+
+        <main class="section">
+
+            <!--    1) QUé valores aportamos      -->
+            <div class="section-1">
+                <h1>PAGINA EN CONSTRUCCION</h1>
+                <h2>elevamos tu potencial. . .</h2><br><br>
+                <p><b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit eum totam fugiat amet ab placeat
+                        eveniet sit nostrum ipsam magnam.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere natus pariatur magni! Ab
+                        beatae impedit distinctio numquam veritatis doloribus?
+                    </b></p>
+                <div class="valor1">
+                    <img src="assets/imgs/under_construction.png" alt="pagina_en_construccion">
+                    <div>
+                        <h3>. . .marcando tendencia</h3><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum optio iure molestiae
+                            aperiam tenetur accusamus reiciendis veniam fugiat! Totam a sit assumenda illo eos in,
+                            inventore exercitationem. Ducimus, numquam!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <!--    contact     form    -->
+        <div class="codear-info">
+            <h2><span>CodeAr</span>Tech</h2>
+            <ul>
+                <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+                <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+                <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h3>Contact us</h3>
+            <br>
+            <form>
+                <p>
+                    <label><i>NAME</i></label>
+                    <input type="text" name="name" required placeholder="n a m e . . .">
+                </p>
+                <p>
+                    <label><i>COMPANY</i></label>
+                    <input type="text" name="company" required placeholder="c o m p a n y . . .">
+                </p>
+                <p>
+                    <label><i>EMAIL</i></label>
+                    <input type="email" name="email" required placeholder="e m a i l . . .">
+                </p>
+                <p>
+                    <label><i>PHONE NUMBER</i></label>
+                    <input type="text" name="phone" placeholder="p h o n e . . .">
+                </p>
+                <p class="full">
+                    <label><i>MESSAGE</i></label>
+                    <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+
+        <!--    contact     form    -->
+
+        <footer class="footer">
+            <div class="footer_img">
+                <img src="assets/imgs/triqueta.png" alt="triqueta">
+            </div>
+            <div class="copyright">
+                <h2><span>CodeAr</span>Tech</h2></a> <br>
+                <i>
+                    <p>Code Argentina Tech S.R.L </p> <br>
+                    <p> <!--  script que actualiza el año al actual  -->
+                        <script type="text/javascript">
+                            copyright = new Date();
+                            update = copyright.getFullYear(); document.write("© " + update + " " + "@All rights reserved");
+                        </script>
+                    </p><br>
+                </i>
+            </div>
+            <div class="casos">
+                <a href="success_stories.html">Casos de éxito</a>
+            </div>
+            <div class="valor">
+                <a href="">Aportando valor...</a>
+            </div>
+            <div class="conocenos">
+                <a href="know_us.html">Conocenos!</a>
+            </div>
+            <div class="contactanos">
+                <a href="">Contactanos</a>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://discord.com" target="_blank">
+                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://web.telegram.org" target="_blank">
+                    <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                </a>
+                <br>
+                <a href="">English </a>|<a href=""> Español</a>
+
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
