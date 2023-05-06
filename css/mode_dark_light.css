@@ -1,0 +1,58 @@
+/*  PALETA  COLORES */
+:root {
+    --nav-color: #212121;
+    --button: #a7ffeb;
+
+    --text-P: #010718;
+    --text-nav: #E4E9F7;
+    --text-span: ;
+
+    --title: ;
+    --sub-title: ;
+    /* --background: #009688; usado en header footer */
+    --background: rgb(230, 230, 230);
+    /*  #37383b; #B0C4DE; #009688; */
+    --background-nav: #4db6ac;
+    --background-main: ;
+    --background-redes: ;
+    --background-hover: ;
+}
+
+[data-theme="light"] {
+    --nav-color: #212121;
+    --button: #a7ffeb;
+
+    --text-P: #010718;
+    --text-nav: #E4E9F7;
+    --text-span: #;
+
+    --title: ;
+    --sub-title: ;
+
+    --background: rgb(230, 230, 230);
+    /*  #37383b; #00796b; */
+    --background-nav: #4db6ac;
+    --background-main: #B0C4DE;
+    --background-redes: ;
+    --background-hover: ;
+    --background-slider: #B0C4DE;
+}
+
+[data-theme="dark"] {
+    --nav-color: #fafafa;
+    --button: #4db6ac;
+
+    --text-P: #F5F5F5;
+    --text-nav: #E4E9F7;
+    --text-span: #;
+
+    --title: ;
+    --sub-title: ;
+
+    --background: rgb(230, 230, 230);
+    --background-nav: #00796b;
+    --background-main: ;
+    --background-redes: ;
+    --background-hover: ;
+    --background-slider: #B0C4DE;
+}
