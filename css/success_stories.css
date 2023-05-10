@@ -8,19 +8,19 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.contenedor{
-    width: 90%;
-    max-width: 98%; /*ancho máximo de la página*/
-    margin: 0 auto 20px auto; /*auto permite centrar nuestra página en forma horizontal*/
+.contenedor {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    gap: 20px;
+    /*nos ahorramos tenes que poner márgenes entre los elementos*/
     column-gap: 0;
 
     /*3 columnas: section (con 2 widgets) - sidebar*/
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    /*4 filas: header, section, contact-form, footer*/
-    grid-template-rows: repeat(4, auto);
+
 
     grid-template-areas: "header header header"
                          "contein contein contein"
@@ -103,6 +103,7 @@ main {
 }
 .contein-cards {
     grid-area: contein;
+    background: lightskyblue;
     display: flex;
     flex-wrap: wrap;
     max-width: 1150px;
@@ -112,7 +113,7 @@ main {
     row-gap: 50px;
 }
 .card {
-    background-color: #fff;
+    background-color: #5eb1ca;
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
     padding: 20px 30px;
@@ -120,14 +121,14 @@ main {
     flex-direction: column;
     /* max-width: 290px; */
 }
-/* centro solo los elementos img y myname */
-.card .img, .myname {   
+/* centro solo los elementos y img */
+.card .img {   
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.icons {
-    align-self: center;
+.myname {
+    text-align: left;
     display: flex;
     column-gap: 70px;
     margin-top: auto; /*  fija el boton abajo y lo aleja del elemento superior a el  */
@@ -145,10 +146,18 @@ main {
 .card:nth-of-type(4) {
     flex: 1 270px;
 }
+.card:nth-of-type(5) {
+    flex: 1 270px;
+}
+.card:nth-of-type(6) {
+    flex: 1 270px;
+}
 .card-1, 
 .card-2, 
 .card-3, 
-.card-4 {
+.card-4,
+.card-5,
+.card-6 {
     row-gap: 10px; /* gap en filas entre los elementos dentro de cada card individual  */
 }
 .card .img {

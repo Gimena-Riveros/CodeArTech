@@ -13,7 +13,7 @@
     --background: rgb(230, 230, 230);
     /*  #37383b; #B0C4DE; #009688; */
     --background-nav: #4db6ac;
-    --background-main: ;
+    --background-main: #B0C4DE;
     --background-redes: ;
     --background-hover: ;
 }
@@ -34,7 +34,7 @@
     --background-nav: #4db6ac;
     --background-main: #B0C4DE;
     --background-redes: ;
-    --background-hover: ;
+    --background-hover: #00bfa5;
     --background-slider: #B0C4DE;
 }
 
@@ -51,8 +51,8 @@
 
     --background: rgb(230, 230, 230);
     --background-nav: #00796b;
-    --background-main: ;
+    --background-main: #757575;
     --background-redes: ;
-    --background-hover: ;
+    --background-hover: #1de9a6;
     --background-slider: #B0C4DE;
 }

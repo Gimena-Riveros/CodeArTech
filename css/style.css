@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,119 +35,9 @@ body {
         "footer footer footer";
 }
 
-/********* HEADER STYLES *********/
-header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem 0 2rem;
-    background-color: var(--background-nav);
-    border-bottom: solid 5px rgba(0, 0, 0, 0.151);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.img {
-    width: 55px;
-}
-
-.abrir,
-.cerrar {
-    display: none;
-}
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    border-radius: 0 0 5px 5px;
-}
-
-header li {
-    font-weight: 800;
-    border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-    border-right: solid 2px rgba(37, 36, 36, 0.151);
-    height: 70px;
-    border-radius: 5px;
-    margin-right: 30px;
-    padding: 0 20px;
-}
-
-.nav-list li,
-.logo {
-    border-radius: 5px;
-}
-
-.nav-list li a,
-.header a {
-    color: rgb(0, 0, 0);
-    display: flex;
-    padding: 23px 4px;
-    text-decoration: none;
-}
-
-/*  THEME   DARK  LABEL  -  Estilos del switch */
-.header .switch {
-    position: relative;
-    display: inline-block;
-    background-color: var();
-    width: 60px;
-    height: 34px;
-}
-
-.header .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.header .switch .deslizar {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--background-slider);
-    /* fondo del slider */
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.header .switch .deslizar:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--background-nav);
-    /* color del boton */
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked+.deslizar {
-    background-color: var(--background-slider);
-    /* fondo del slider */
-}
-
-input:checked+.deslizar:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-/********* MAIN STYLES *********/
+/**************** 
+    MAIN STYLES 
+*****************/
 .contenedor>div,
 .contenedor .header,
 .contenedor .section,
@@ -344,6 +235,93 @@ input:checked+.deslizar:before {
     color: blueviolet !important;
 }
 
+/*  section  3  bis  */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+    letter-spacing: 0.2rem;
+}
+
+/* Add a blue color to the job */
+.job {
+    color: cornflowerblue;
+    font-size: small;
+}
+
+/*  section  3  bis  */
 /* Seccion 4 */
 .contenedor .section-4 {
     background: royalblue;
@@ -378,7 +356,7 @@ input:checked+.deslizar:before {
     height: 100px;
     position: absolute;
     width: 200px;
-    z-index: 2;
+    z-index: 0;
 }
 
 .contenedor .section-4 .slider-block::after {
@@ -403,6 +381,10 @@ input:checked+.deslizar:before {
     width: 250px;
 }
 
+.contenedor .section-4 .slide-block img{
+    object-fit: contain;
+}
+
 .contenedor .section-4 .slider-block {
     background: transparent;
     /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
@@ -420,12 +402,12 @@ input:checked+.deslizar:before {
     height: 100px;
     position: absolute;
     width: 200px;
-    z-index: 2;
+    z-index: 0;
 }
 
-/****************
-    contact     form
-*****************/
+/*********************
+    CONTACT  FORM
+**********************/
 .codear-info {
     background: rgb(97, 177, 243);
     /* agrego imagen fondo del tamanio de caja codear-info mas propiedades */
@@ -465,7 +447,7 @@ footer h2 {
 }
 
 /****************
-    Form styles
+    FORM  STYLES
 *****************/
 .contact {
     background: lightskyblue;
@@ -530,98 +512,16 @@ footer h2 {
     color: rgb(65, 105, 225) !important;
 }
 
+.footer{
+    border: 0 !important;
+}
+
 /*  FIN     contact     form    */
 
-/***************
- FOOTER
- **************/
-.footer {
-    background: rgb(82, 133, 243);
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    grid-area: footer;
-    font-weight: bold;
-    background-color: var(--background-nav);
-    border-top: solid 5px rgba(0, 0, 0, 0.151);
-    border-bottom: var(--background) solid 50px;
-    border-radius: 5px 5px 0 0;
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    grid-template-areas: 'brand copyright valor conocenos'
-        'brand copyright valor contactanos'
-        'brand copyright casos redes'
-    ;
-}
 
-footer img {
-    height: 120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer_img {
-    grid-area: brand;
-    height: 125px;
-    border: 0;
-}
-
-.casos {
-    grid-area: casos;
-    padding: 1rem;
-
-}
-
-.valor {
-    grid-area: valor;
-    padding: 1rem;
-}
-
-.conocenos {
-    grid-area: conocenos;
-    padding: 1rem;
-}
-
-.contactanos {
-    grid-area: contactanos;
-    padding: 1rem;
-}
-
-.copyright {
-    grid-area: copyright;
-    padding-top: 10px;
-}
-
-.redes {
-    grid-area: redes;
-}
-
-.redes i {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-footer div {
-    border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-    border-right: solid 2px rgba(37, 36, 36, 0.151);
-}
-
-footer a {
-    text-decoration: none;
-}
-
-.redes a:hover {
-    color: blue;
-}
-
-
-
-/****************
-Media Queeries
-*****************/
+/******************
+    Media  Queeries
+*******************/
 
 /* Diseño responsive para tablets (landscape) */
 @media screen and (max-width: 800px) {
@@ -634,72 +534,14 @@ Media Queeries
     }
 
 
-
-    .abrir,
-    .cerrar {
-        display: block;
-        border: 0;
-        font-size: 1.24rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgb(1, 26, 48);
-        border-radius: 5px;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-        border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-        border-right: solid 2px rgba(37, 36, 36, 0.151);
-    }
-
-    .nav-list li {
-        border-bottom: solid 4px rgba(138, 135, 135, 0.151);
-        border-right: solid 2px rgba(138, 135, 135, 0.151);
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-
-    }
-
-    .footer {
-        grid-template-columns: auto;
-        grid-template-areas: 'brand copyright copyright valor'
-            'brand copyright copyright casos'
-            'conocenos contactanos redes redes';
-    }
-
-    .footer_img {
-        border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-    }
+    /* Pasé todo lo relativo a header y footer a header_footer.css */
+  
 
     .conocenos,
     .contactanos {
         padding: 16px;
     }
 }
-
 
 
 /* Diseño responsive para celulares (landscape) y tablets (portrait) */
@@ -724,29 +566,8 @@ Media Queeries
         grid-column: 1/3;
     }
 
-    .footer {
-        grid-template-areas: 'brand brand copyright copyright'
-            'valor casos conocenos contactanos'
-            'redes redes redes redes';
-    }
+    /* Pasé todo lo relativo a header y footer a header_footer.css */
 
-    .redes {
-        text-align: center;
-    }
-
-    .casos,
-    .valor,
-    .conocenos,
-    .contactanos {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        min-height: 3rem;
-    }
-
-    .copyright {
-        padding: 5;
-    }
 }
 
 
@@ -763,43 +584,9 @@ Media Queeries
         grid-gap: 20px;
     }
 
-    .footer {
-        grid-template-areas: 'brand brand brand brand'
-            'copyright copyright copyright copyright'
-            'valor valor casos casos'
-            'conocenos conocenos contactanos contactanos'
-            'redes redes redes redes';
-    }
-
     .codear-info {
         background: rgb(97, 177, 243);
         grid-area: codear-info;
         letter-spacing: 3px;
     }
-
-    footer img {
-        height: 70px;
-    }
-
-    .footer_img {
-        border: 0;
-    }
-
-    .footer div {
-        height: min-content;
-
-    }
-
-    .copyright {
-        text-align: center;
-        padding: 0;
-    }
-
-    .conocenos,
-    .contactanos,
-    .casos,
-    .valor {
-        padding: 5px;
-    }
-
 }
