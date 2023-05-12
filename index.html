@@ -29,43 +29,43 @@
 
             <!--    1) QUé valores aportamos      -->
             <div class="section-1">
-                <h1>Desarrollo de software a medida</h1>
-                <h2>que se ajusta 100% a tus necesidades.</h2><br><br>
-                <p><b> Somos una empresa de programación que brinda una variedad de habilidades y conocimientos valiosos
-                        a cualquier proyecto o equipo de desarrollo, para diseñar, construir y mantener páginas de alta
-                        calidad.
-                        <br>
-                        <br>
-                        Buscamos aportar nuevas ideas y enfoques para mejorar la eficiencia, la usabilidad o la
-                        escalabilidad de un sistema, encontrando soluciones innovadores a problemas técnicos.
-                    </b></p>
-                <div class="valor1">
-                    <img src="assets/imgs/valor1.svg" alt="valor1">
-                    <div>
-                        <h3>Desarrollo de sistemas a medida</h3><br>
-                        <p>Las empresas confían en CodeArTech para la transformación digital de sus procesos cambiando
-                            radicalmente la eficiencia de los mismos.</p>
-                    </div>
-                </div>
-                <div class="valor2">
-                    <img src="assets/imgs/valor2.svg" alt="valor2">
-                    <div>
-                        <h3>DevOps</h3> <br>
-                        <p>Despliegue y migraciones. <br><br> Monitoreo y mantenimiento de sistemas. <br><br>
-                            Consultoría de Transformación Digital.</p>
-                    </div>
-                </div>
-                <div class="valor3">
-                    <img src="assets/imgs/valor3.svg" alt="valor3">
-                    <div>
-                        <h3>Aumento de personal de IT</h3><br>
-                        <p>Una alternativa flexible y sin complicaciones para ampliar su equipo de IT. <br> <br>Gestión
-                            de recursos más estrecha. <br><br> No hay inversión en insfraestructura ni costos
-                            adicionales de contratación.</p>
-                    </div>
-                </div>
+                <h1><span> Desarrollo de software</span></h1>
+                <h1>a medida</h1>
+                <h2>que se ajusta 100% a tus necesidades.</h2>
+                    <h3><i> Somos una empresa de programación que brinda una variedad de habilidades y conocimientos
+                        valiosos
+                        a cualquier proyecto o equipo de desarrollo, para diseñar, construir y mantener páginas de
+                        alta calidad.</i></h3>
 
-
+                <div class="valor_cards">
+                    <div class="valor1">
+                        <img src="assets/imgs/valor1.svg" alt="valor1">
+                        <div>
+                            <div class="title1"><h3>Desarrollo de sistemas a medida</h3></div>
+                            <p>Las empresas confían en CodeArTech para la transformación digital de sus procesos
+                                cambiando
+                                radicalmente la eficiencia de los mismos.</p>
+                        </div>
+                    </div>
+                    <div class="valor2">
+                        <img src="assets/imgs/valor2.svg" alt="valor2">
+                        <div>
+                            <div class="title2"><h3>DevOps</h3></div>
+                            <p>Despliegue y migraciones. <br><br> Monitoreo y mantenimiento de sistemas. <br><br>
+                                Consultoría de Transformación Digital.</p>
+                        </div>
+                    </div>
+                    <div class="valor3">
+                        <img src="assets/imgs/valor3.svg" alt="valor3">
+                        <div>
+                            <div class="title3"><h3>Aumento de personal de IT</h3></div>
+                            <p>Una alternativa flexible y sin complicaciones para ampliar su equipo de IT. <br>
+                                <br> No hay inversión en insfraestructura ni costos
+                                adicionales de contratación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!--    2) Carrusel automatico secciones     -->
@@ -284,20 +284,30 @@
         <!--    contact     form    -->
 
         <footer class="footer">
- 
+
         </footer>
 
     </div>
-    <script src="./js/index.js"></script>
-    <script src="js/script.js"></script>
+     <script src="js/script.js"></script>
+     <script src="./js/index.js"></script>
+   
 </body>
 
 </html>
 <!--
     CAMBIOS REALIZADOS:
+    @ Se independizo header y footer. 
     @ Se agrego theme en header y css, se agrego js para theme. 
     @ css: width a 100% 
     @ css: .contenedor saque margen inferior (de 20 a cero) asi pegar footer a botton.
     @ header li: agregue margin-right 30px. Y padding: 0 20px; 
     @ header z-index: 1 
 -->
+
+<!--@ Pasé media queries a header_footer.css, y allí también eliminé el border-bottom del footer.
+    @ Volví a sacar margin y padding en header li porque aunque quedaban más separados, se rompía el menú entre los 900 y los 800 px aprox (igual no queda tan mal!). Posible solución alternativa: incorporar otra media queery para arreglar solo eso.
+ -->
+
+ <!--   @ FInalizado el prototipo de seccion 1.
+        @ Vuelta a version anterior de opiniones de clientes y de slider automatico de secciones.
+        @ Pendiente: revisar por qué no funcionan botones laterales en carrusel manual y cambiar colores -->
