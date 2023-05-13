@@ -30,6 +30,10 @@ header.innerHTML = `
     <li id="myLinks"><a href=""><i>Codeemos</i></a></li>
 </ul>
 </nav>
+<!--  BUTTON  UP  -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/imgs/triquetra_32px.png"
+alt="triquetra">
+</button>
 <!--  THEME  -->
 <label class="switch">
 <input type="checkbox" id="deslizar" checked>
