@@ -1,4 +1,3 @@
-
 //MENU HAMBURGUESA//
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
