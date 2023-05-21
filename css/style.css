@@ -7,22 +7,21 @@
 }
 
 body {
-    background: rgb(230, 230, 230);
     color: #000;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-index);
     /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
 }
 
 .contenedor {
     width: 100%;
-    margin: 0 auto 0 auto;
+    /* margin: 0 auto; */
     /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px;
+    row-gap: 20px;
     /*nos ahorramos tenes que poner márgenes entre los elementos*/
-    column-gap: 0;
-
+    
     /*3 columnas: section (con 2 widgets) - sidebar*/
     grid-template-columns: repeat(3, 1fr);
 
@@ -35,70 +34,116 @@ body {
         "footer footer footer";
 }
 
-/**************** 
-    MAIN STYLES 
+/****************
+    MAIN STYLES
 *****************/
-.contenedor>div,
-.contenedor .header,
-.contenedor .section,
-.contenedor .slider,
-.contenedor .section-2 .contenedor .carrousel,
-.contenedor .section-4 {
+/* .contenedor>div, */
+.contenedor .header
+/*, .contenedor .section, */
+/* .contenedor .slider, */
+/* .contenedor .section-2 .contenedor .carrousel, */
+/* .contenedor .section-4  */
+{
     padding: 20px;
-    border-radius: 4px;
-}
-
-.contenedor .codear-info {
-    padding: 20px;
-    border-radius: 4px 0 0 4px;
-}
-
-.contenedor .contact {
-    padding: 20px;
-    border-radius: 0 4px 4px 0;
-}
-
-.contenedor .section-1,
-.contenedor .slider,
-.contenedor .carrousel {
-    margin-bottom: 12px;
+    /* border-radius: 4px; */
 }
 
 .contenedor .section-1,
 .contenedor .slider,
 .contenedor .carrousel,
 .contenedor .section-4 {
-    padding: 50px 70px;
+    padding: 50px 30px;
     grid-area: section;
 }
 
 .contenedor .section {
-    background: #fff;
+    background: var(--background-main-index);
     grid-area: section;
 }
 
 /* Seccion 1 */
-.contenedor .section-1 {
-    background: #7eeeba;
+.contenedor .section-1 h1{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
 }
+
+.contenedor .section-1 h2{
+    text-align: center;
+    margin: 2em 0 5em 0;
+    font-weight: 800;
+}
+
+.contenedor .section-1 h1 span{
+    color: var(--text-span);
+}
+
+.section-1 h1,
+.section-1 h2,
+.section-1>h3,
+.section-1 h4{
+    color: var(--text-P) !important;
+}
+
+.contenedor .section-1 p,
+.contenedor .section-1 h3{
+    text-align: center;
+    margin: 2em;
+}
+
+.contenedor .section-1 .valor_cards{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.section-1 .valor1,
+.section-1 .valor2,
+.section-1 .valor3 {
+    background-color:var(--background-card_values);
+    border: #000 solid 1px;
+    max-width: 400px;
+    padding-top: 30px;
+    margin: 1em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+
+}
+
+.section-1 .valor1 .title1,
+.section-1 .valor2 .title2,
+.section-1 .valor3 .title3{
+    font-size: larger;
+    font-style: italic;
+}
+
+.valor1:hover,
+.valor2:hover,
+.valor3:hover{
+    background-color: var(--background-hover);
+    transform: scale(1.05);
+    color: #333;
+    transition: 1s;
+}
+
+
 
 /* Seccion 2 */
 .contenedor .slider {
-    background: #f8a81d;
-    /* max-width: 120em; */
     padding: 2em;
-    /* width: 1280px; */
     overflow: hidden;
 }
 
 .contenedor .slider ul {
     display: flex;
-    margin-top: 2em;
-    /* padding: 2em; */
+    margin: 2em 0 5em 0;
     width: 400%;
     background: space;
     flex-flow: row nowrap;
-    justify-content: space-around;
     align-items: center;
     animation: slide 20s infinite alternate ease-in-out;
 }
@@ -106,8 +151,6 @@ body {
 .contenedor .slider li {
     width: 100%;
     list-style: none;
-    /* margin: 1em 0 0; */
-    padding: .4em;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -117,39 +160,43 @@ body {
 .img_y_texto {
     position: relative;
     display: inline-block;
+    min-width: 100px;
 }
 
 .nombreseccion {
     position: absolute;
-    /* top: 30%; */
-    color: rgb(0, 0, 0);
     font-weight: 800;
-    background-color: #77a0faf8;
     border-radius: 5px;
     border-bottom: #00000096 solid 2px;
     border-right: #00000096 solid 2px;
+    text-align: center;
 }
 
 .nombreseccion a {
     text-decoration: none;
+    color: white;
+    letter-spacing: 6px;
+    background-color: #7171718a;
+    border-radius: 5px;
+}
+
+.nombreseccion a:hover {
+    background-color: var(--background-hover);
+    transform: scale(1.05);
+    color: #333;
+    transition: .5s;
+    border-radius: 5px;
 }
 
 .contenedor .slider img {
-    /* width: calc(100% / 2 - 2em ); */
-    min-height: 10vh;
     max-height: 40vw;
-    background-color: #00b2e9;
+    max-width: 100vh;
     outline: #00000013 10px solid;
 }
 
 @keyframes slide {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
 
     25% {
         margin-left: -100%;
@@ -177,46 +224,53 @@ body {
 }
 
 /* Seccion 3 */
-.carrousel {
-    background-color: lightskyblue;
-    max-width: 120em;
-    /* padding: 2em; */
+.contenedor .carrousel{
+    background-color: var(--background-index);
     overflow: hidden;
+    padding: 2em;
+    color: var(--text-P);
 }
 
-.carrousel h1 {
+.carrousel h1{
     text-align: center;
+    font-size: 4em;
+    font-weight: 70;
 }
 
-.carrousel .grande {
+.carrousel .grande{
     width: 300%;
-    margin-top: 2em;
+    min-width: fit-content;
     background: space;
-    background-color: rgba(255, 166, 0, 0.582);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    padding: 2em 0 2em 0;
     border-radius: 5px;
-    outline: #00000013 10px solid;
     /* Transición del carrousel */
     transition: all .5s ease;
     transform: translateX(0%);
 }
 
-.carrousel .carr_img {
-    width: calc(100% / 3 - 2em);
-    min-height: 5vh;
-    min-width: 300px;
-    max-width: 30vw;
-    background-color: lime;
-    outline: #00000013 10px solid;
+.carrousel .opiniones{
+    max-width:400px;
+    line-height: 1.8;
+    padding: 3rem;
+
 }
 
-.carrousel .puntos {
+.grande p{
+    padding-bottom: 1em;
+    text-align: justify;
+}
+
+.grande h4, .grande h3{
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.carrousel .puntos{
     width: 100%;
-    margin: 1em 0 0;
+    margin: 1em 0 0 0;
     padding: .4em;
     display: flex;
     flex-flow: row nowrap;
@@ -225,107 +279,36 @@ body {
     list-style-type: none;
 }
 
-.carrousel .punto {
+.carrousel .punto{
     width: 2em;
     height: 2em;
     margin: .2em;
 }
 
-.carrousel .punto.activo i {
-    color: blueviolet !important;
+.carrousel .punto.activo i{
+    color: var(--background-nav) !important;
 }
 
-/*  section  3  bis  */
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    background: #f1f1f1f1;
-}
 
-/* Slides */
-.mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-}
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Add an italic font style to all quotes */
-q {
-    font-style: italic;
-}
-
-/* Add a blue color to the author */
-.author {
-    color: cornflowerblue;
-    letter-spacing: 0.2rem;
-}
-
-/* Add a blue color to the job */
-.job {
-    color: cornflowerblue;
-    font-size: small;
-}
-
-/*  section  3  bis  */
 /* Seccion 4 */
 .contenedor .section-4 {
-    background: royalblue;
+    background: var(--background-main-index);
 }
+
+.contenedor .section-4 h1{
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--text-P);
+    font-size: 4em;
+    font-weight: 70;
+}
+
+.contenedor .section-4 .slide-block img{
+    object-fit: contain;
+}
+
+
 
 /********/
 /********/
@@ -340,7 +323,6 @@ q {
 }
 
 .contenedor .section-4 .slider-block {
-    background: transparent;
     /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
     height: 100px;
     margin: auto;
@@ -381,9 +363,6 @@ q {
     width: 250px;
 }
 
-.contenedor .section-4 .slide-block img{
-    object-fit: contain;
-}
 
 .contenedor .section-4 .slider-block {
     background: transparent;
@@ -405,6 +384,12 @@ q {
     z-index: 0;
 }
 
+.contenedor .carrousel span,
+.contenedor .section-4 span{
+    color: var(--text-span);
+    font-weight: 700;
+}
+
 /*********************
     CONTACT  FORM
 **********************/
@@ -415,10 +400,12 @@ q {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
+    margin: 20px 0 20px 0;
     grid-area: codear-info;
     letter-spacing: 1px;
-}
+    padding: 20px;
+    border-radius: 4px 0 0 4px;
+    }
 
 .codear-info span,
 .header span,
@@ -443,15 +430,18 @@ footer span {
 .codear-info h2,
 .header h2,
 footer h2 {
-    color: rgb(22, 53, 104);
+    color: var(--text-tech);
 }
 
 /****************
     FORM  STYLES
 *****************/
-.contact {
+.contenedor .contact {
     background: lightskyblue;
     grid-area: contact;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    border-radius: 0 4px 4px 0;
 }
 
 .contact form {
@@ -509,13 +499,8 @@ footer h2 {
 }
 
 .redes i:hover {
-    color: rgb(65, 105, 225) !important;
+    color: rgb(22, 53, 104) !important;
 }
-
-.footer{
-    border: 0 !important;
-}
-
 /*  FIN     contact     form    */
 
 
@@ -531,11 +516,18 @@ footer h2 {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
+            gap: 0;
     }
 
-
     /* Pasé todo lo relativo a header y footer a header_footer.css */
-  
+
+    .codear-info{
+        margin-bottom: 0;
+    }
+
+    .contact{   
+        margin-top: 0;
+    }
 
     .conocenos,
     .contactanos {
@@ -552,7 +544,25 @@ footer h2 {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-        grid-gap: 20px;
+        /* grid-gap: 20px; */
+    }
+
+
+    .contenedor .section-1 h1{
+        font-size: 3em;
+    }
+
+    .nombreseccion a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 0;
+        background-color: #7171718a;
+        border-radius: 5px;
+    }
+
+    .contenedor .section-4 .slider-block::before,
+    .contenedor .section-4 .slider-block::after {
+        width: 70px;
     }
 
     .codear-info {
@@ -581,11 +591,38 @@ footer h2 {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-        grid-gap: 20px;
+        /* grid-gap: 20px; */
     }
 
+    .contenedor .section-1{
+        padding: 15px;
+    }
+
+    .contenedor .section-1 h1{
+        font-size: 2rem;
+    }
+
+
+    .contenedor .section-1 p,
+    .contenedor .section-1 h2,
+    .contenedor .section-1 h3{
+        font-size: larger;
+    }
+
+    .contenedor .carrousel{
+        padding: 20px 5px;
+    }
+
+    .carrousel .grande{
+        align-items: baseline;
+    }
+
+    .carrousel h1,
+    .contenedor .section-4 h1{
+        font-size: 1.5rem;
+}
+
     .codear-info {
-        background: rgb(97, 177, 243);
         grid-area: codear-info;
         letter-spacing: 3px;
     }
