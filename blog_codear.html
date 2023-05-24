@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    css     -->
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/blog_codear.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/mode_dark_light.css">
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <!--    js      defer   -->
+    <script src="./js/theme.js" type="text/javascript" defer></script>
+    <title>know flexbox</title>
+</head>
+
+<body class="contenedor">
+    <!-- Encabezado o Header -->
+    <header class="header">
+
+    </header>
+
+    <main class="contein contein-cards">
+        <div class="card" data-post="post-01">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg" alt="card">
+            </div>
+            <div class="card-body">
+                <span class="tag tag-teal">
+                    Technology
+                </span>
+                <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p>An exploration into the truck's polarising design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, atque harum. Corrupti libero veniam
+                    deleniti, vel odio recusandae dolores amet officia ut dolorem porro vero perspiciatis soluta non
+                    fugiat ipsum itaque quo quas magnam sed! Officia dolorum enim adipisci qui asperiores aliquid magnam
+                    minus fugit. Molestias, obcaecati voluptatum! Tempore, id!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur<span class="dots">...</span>
+                    <span class="more" style="display: none;"> adipiscing elit.
+                        Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scelerisque enim ligula
+                        venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                        venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta.</span>
+                </p>
+                <button onclick="readMore('post-01')" class="btnMoreLess">read more</button>
+                <div class="user">
+                    <img src="./assets/imgs/photo_Gimena.jpg" alt="user">
+                    <div class="user-info">
+                        <h5>Gimena Riveros</h5>
+                        <small>2h ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-post="post-02">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/207305/pexels-photo-207305.jpeg" alt="card">
+            </div>
+            <div class="card-body">
+                <span class="tag tag-purple">
+                    Popular
+                </span>
+                <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p>An exploration into the truck's polarising design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat iusto voluptatibus fugiat
+                    atque fuga repellendus earum consectetur quas non.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur<span class="dots">...</span>
+                    <span class="more" style="display: none;"> adipiscing elit.
+                        Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scelerisque enim ligula
+                        venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                        venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta.</span>
+                </p>
+                <button onclick="readMore('post-02')" class="btnMoreLess">read more</button>
+                <div class="user">
+                    <img src="./assets/imgs/photo_Vanina.jpg" alt="user">
+                    <div class="user-info">
+                        <h5>Vanina Fernandez</h5>
+                        <small>Yesterday</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-post="post-03">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/1192032/pexels-photo-1192032.jpeg" alt="card">
+            </div>
+            <div class="card-body">
+                <span class="tag tag-pink">
+                    Design
+                </span>
+                <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p>An exploration into the truck's polarising design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat iusto voluptatibus fugiat
+                    atque fuga repellendus earum consectetur quas non.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur<span class="dots">...</span>
+                    <span class="more" style="display: none;"> adipiscing elit.
+                        Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scelerisque enim ligula
+                        venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                        venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta.</span>
+                </p>
+                <button onclick="readMore('post-03')" class="btnMoreLess">read more</button>
+                <div class="user">
+                    <img src="./assets/imgs/photo_Mariano.jpeg" alt="user">
+                    <div class="user-info">
+                        <h5>Mariano Oviedo</h5>
+                        <small>23 Dec 2021</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-post="post-04">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/3768187/pexels-photo-3768187.jpeg" alt="card">
+            </div>
+            <div class="card-body">
+                <span class="tag tag-orange">
+                    Photography
+                </span>
+                <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p>An exploration into the truck's polarising design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat iusto voluptatibus fugiat
+                    atque fuga repellendus earum consectetur quas non.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur<span class="dots">...</span>
+                    <span class="more" style="display: none;"> adipiscing elit.
+                        Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scelerisque enim ligula
+                        venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                        venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam tempore
+                        doloribus impedit dignissimos at sit aliquid, laborum commodi eum modi assumenda deleniti
+                        nesciunt. Doloremque, ipsa impedit. Soluta, unde maiores? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Ipsam animi facere quidem atque sed nisi quia alias, itaque ut et
+                        provident ducimus corrupti, aliquam excepturi neque, corporis assumenda laboriosam ex? Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta repudiandae animi, magnam at
+                        a laudantium ipsam doloremque laborum nam molestiae veritatis molestias maiores distinctio
+                        tenetur iusto similique, possimus, voluptatem reprehenderit iste. Porro corrupti voluptatibus
+                        magnam, debitis numquam dignissimos alias reprehenderit aut sequi officiis ratione earum soluta
+                        ipsa cum minus!</span>
+                </p>
+                <button onclick="readMore('post-04')" class="btnMoreLess">read more</button>
+                <div class="user">
+                    <img src="./assets/imgs/photo_Luz.jpg" alt="user">
+                    <div class="user-info">
+                        <h5>Luz Toconás</h5>
+                        <small>Yesterday</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-post="post-05">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg" alt="card">
+            </div>
+            <div class="card-body">
+                <span class="tag tag-teal">
+                    Technology
+                </span>
+                <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p>An exploration into the truck's polarising design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, atque harum. Corrupti libero veniam
+                    deleniti, vel odio recusandae dolores amet officia ut dolorem porro vero perspiciatis soluta non
+                    fugiat ipsum itaque quo quas magnam sed! Officia dolorum enim adipisci qui asperiores aliquid magnam
+                    minus fugit. Molestias, obcaecati voluptatum! Tempore, id!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur<span class="dots">...</span>
+                    <span class="more" style="display: none;"> adipiscing elit.
+                        Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas vitae scelerisque enim ligula
+                        venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                        venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In enim quaerat dolorem magnam
+                        minus iste inventore, distinctio minima ipsam deserunt aperiam maiores quisquam facilis nisi
+                        neque cumque fugit totam sed, itaque animi laudantium amet. Voluptatibus asperiores distinctio
+                        nemo aut nisi sint nulla doloremque magnam consequatur animi in aperiam reiciendis dicta ex,
+                        voluptas cupiditate. Ipsam consequuntur id accusantium, tenetur officia sed soluta harum iure
+                        velit dignissimos! Iste inventore pariatur eaque ratione perspiciatis atque magnam numquam omnis
+                        voluptatem beatae soluta, recusandae eum nesciunt eius maxime illo. Ut eos delectus eveniet
+                        facere ea officiis soluta nesciunt aliquam, sint eligendi, ipsam sapiente consectetur
+                        reiciendis!</span>
+                </p>
+                <button onclick="readMore('post-05')" class="btnMoreLess">read more</button>
+                <div class="user">
+                    <img src="./assets/imgs/photo_Gimena.jpg" alt="user">
+                    <div class="user-info">
+                        <h5>Gimena Riveros</h5>
+                        <small>2h ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--    contact     form    -->
+    <div class="codear-info">
+        <h2><span>CodeAr</span>Tech</h2>
+        <ul>
+            <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+            <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+            <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <br>
+        <form action="https://formspree.io/f/xeqwdyjo" method="POST" class="formulario" id="formulario"
+            autocomplete="off">
+
+            <!-- NOMBRE -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Apellido y Nombre
+                    <span>*</span>
+                </label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" required
+                        placeholder="n o m b r e   c o m p l e t o . . .">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El apellido y nombre debe ocupar de 3 a 16 dígitos y solo puede
+                    contener letras.</p>
+            </div>
+
+            <!-- COMPAÑIA -->
+            <div class="formulario__grupo" id="grupo__compania">
+                <label for="compania" class="formulario__label">Empresa
+                    <span>*</span>
+                </label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="compania" id="compania" required
+                        placeholder="e m p r e s a . . .">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre de la compañia debe ocupar de 2 a 16 dígitos y solo
+                    puede contener letras.</p>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Email
+                    <span>*</span>
+                </label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" required
+                        placeholder="e m a i l . . .">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos y guiones.
+                </p>
+            </div>
+
+            <!-- TELEFONO -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="n u m e r o . . .">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14
+                    dígitos.</p>
+            </div>
+
+            <!-- MENSAJE -->
+
+            <div class="formulario__grupo" id="grupo__mensaje">
+                <label for="mensaje" class="formulario__label">Mensaje
+                    <span>*</span>
+                </label>
+                <div class="formulario__grupo-input">
+                    <input name="mensaje" cols="30" type="text" class=" formulario__input" id="mensaje" required
+                        placeholder="m e n s a j e . . .">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">El mensaje tiene que ser de 10 a 70 dígitos y solo puede contener
+                    letras.</p>
+            </div>
+
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                    correctamente. </p>
+            </div>
+
+            <div class="formulario__grupo" id="formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                    exitosamente!</p>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!--    contact     form    -->
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./js/contact_us-fspree.js" type="text/javascript"></script>
+    <script src="./js/blog_codear.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+</body>
+
+</html>
+<!--
+    Thanks to 
+    <a href="https://www.flaticon.com/free-icons/triquetra" title="triquetra icons">Triquetra icons created by Freepik - Flaticon</a>
+-->
