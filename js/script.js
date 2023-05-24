@@ -1,5 +1,5 @@
 const header = document.querySelector("header");
-const footer = document.querySelector("footer"); 
+const footer = document.querySelector("footer");
 
 
 /*  **********************   *
@@ -26,9 +26,10 @@ header.innerHTML = `
 <ul class="nav-list">
     <li id="myLinks"><a href="index.html"><i>CODEAR</i></a></li>
     <li id="myLinks"><a href="know_us.html"><i>CONOCENOS</i></a></li>
-    <li id="myLinks"><a href="success_stories.html"><i>CASOS</i></a></li>
+    <li id="myLinks"><a href="success_stories.html"><i>CASOS DE ÉXITO</i></a></li>
     <li id="myLinks"><a href="contact_us.html"><i>CONTACTANOS</i></a></li>
     <li id="myLinks"><a href="codeemos.html"><i>CODEEMOS</i></a></li>
+    <li id="myLinks"><a href="blog_codear.html"><i>BLOG</i></a></li>
 </ul>
 </nav>
 <!--  BUTTON  UP  -->
@@ -66,32 +67,24 @@ footer.innerHTML = `
 <a href="success_stories.html">Casos de éxito</a>
 </div>
 <div class="valor">
-<a href="">Aportando valor...</a>
+<a href="codeemos.html">Codea con nosotros!</a>
 </div>
 <div class="conocenos">
 <a href="know_us.html">Conocenos!</a>
 </div>
 <div class="contactanos">
-<a href="">Contactanos</a>
+<a href="contact_us.html">Contactanos</a>
 </div>
 <div class="redes">
-<a href="https://www.instagram.com/" target="_blank">
-    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
-</a>
-<a href="https://twitter.com" target="_blank">
-    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-</a>
 <a href="https://www.linkedin.com" target="_blank">
-    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-linkedin"></i>
 </a>
 <a href="https://discord.com" target="_blank">
-    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-discord"></i>
 </a>
-<a href="https://web.telegram.org" target="_blank">
-    <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
-</a>
-<br>
+<a href="https://github.com/Gimena-Riveros/CodeArTech" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a><br>
 <a href="">English </a>|<a href=""> Español</a>
-
 </div>
 `;
