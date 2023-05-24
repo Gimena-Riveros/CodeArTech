@@ -7,114 +7,49 @@
 }
 
 body {
-    background: rgb(230, 230, 230);
     color: #000;
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Monserrat', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
+    background: var(--background);
 }
 
 .contenedor {
-    width: 100%;
-    margin: 0 auto 0 auto;
-    /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px;
-    /*nos ahorramos tenes que poner márgenes entre los elementos*/
-    column-gap: 0;
-
-    /*3 columnas: section (con 2 widgets) - sidebar*/
     grid-template-columns: repeat(3, 1fr);
-
-    /*4 filas: header, section, contact-form, footer*/
-    grid-template-rows: repeat(4, auto);
-
-    grid-template-areas: "header header header"
+    grid-template-areas:
+        "header header header"
         "section section section"
         "codear-info contact contact"
+        "maps maps maps"
         "footer footer footer";
 }
 
-/**************** 
-    MAIN STYLES 
-*****************/
-.contenedor>div,
-.contenedor .header,
-.contenedor .section {
+.header {
+    grid-area: header;
     padding: 20px;
-    border-radius: 4px;
+}
+
+.contenedor .section {
+    grid-area: section;
+    background: var(--background-main-index);
+    color: var(--text-p);
+    border-radius: 4px 4px 0 0;
+    padding: 50px 70px;
 }
 
 .contenedor .codear-info {
-    padding: 20px;
-    border-radius: 4px 0 0 4px;
-}
-
-.contenedor .contact {
-    padding: 20px;
-    border-radius: 0 4px 4px 0;
-}
-
-.contenedor .section {
-    background:var(--background-main);
-    grid-area: section;
-}
-
-/* Sections*/
-.contenedor .section-1 {
-    margin-bottom: 12px;
-    border-radius: 4px;
-    padding: 50px 70px;
-    grid-area: section;
-    background: var(--background-nav);
-}
-
-.contenedor .section-2 .codear-info {
-    padding: 50px 70px;
-    background: var(--background-nav);
     grid-area: codear-info;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 150px;
-}
-
-.contenedor .section-3 .contact {
     padding: 50px 70px;
-    grid-area: contact;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 150px;    
-}
-
-.maps iframe{
-    border: #00bfa5 solid 4px;
-    border-radius: 20px;
-    margin-top: 20px;
-    width: 99%;
-    height: 300px;
-}
-
-
-
-/*********************
-    CONTACT  FORM
-**********************/
-.codear-info {
-    background: rgb(97, 177, 243);
-    /* agrego imagen fondo del tamanio de caja codear-info mas propiedades */
+    border-radius: 4px 0 0 4px;
     background-image: url("../assets/imgs/remote_workers_at_lake.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
-    grid-area: codear-info;
-    min-height: 700px;
     letter-spacing: 1px;
+    min-height: 70vh;
+    margin-top: 20px;
 }
 
-.codear-info span,
-.header span,
-footer span {
+.codear-info span {
     color: aliceblue;
 }
 
@@ -132,18 +67,21 @@ footer span {
     text-align: left;
 }
 
-.codear-info h2,
-.header h2,
-footer h2 {
-    color: rgb(22, 53, 104);
+.codear-info h2 {
+    color: var(--text-tech);
 }
 
 /****************
     FORM  STYLES
 *****************/
-.contact {
-    background: var(--background-nav);
+.contenedor .contact {
+    background: lightskyblue;
     grid-area: contact;
+    padding: 20px;
+    border-radius: 0 4px 4px 0;
+    min-width: 60%;
+    min-height: 70vh;
+    margin-top: 20px;
 }
 
 .contact form {
@@ -158,19 +96,29 @@ footer h2 {
 
 .contact label {
     display: block;
-    margin-bottom: 10px;
 }
 
-.contact .full {
+.contact #grupo__mensaje {
+    grid-column: 1/3;
+    min-height: 35vh;
+}
+
+.contact #formulario__grupo-btn-enviar {
     grid-column: 1/3;
 }
 
-.contact input,
-.contact textarea {
+.formulario__grupo #mensaje {
+    min-height: 16vh;
+    width: 95%;
+}
+
+.contact input {
     width: 90%;
     border: 1px solid #FDD692;
     padding: 1em;
 }
+
+
 
 .contact button {
     background: rgb(97, 177, 243);
@@ -179,135 +127,131 @@ footer h2 {
     text-transform: capitalize;
     font-weight: 800;
 }
+
 /********************
 
         j s
 
 ********************/
-.formulario {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}
-
 .formulario__label {
-	display: block;
-	font-weight: 700;
-	padding: 10px;
-	cursor: pointer;
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .formulario__grupo-input {
-	position: relative;
+    position: relative;
 }
 
 .formulario__input {
-	
-	background: #fff;
-	border-radius: 3px;
-	
+
+    background: #fff;
+    border-radius: 3px;
+
 }
+
 /**/
-#grupo__mensaje{
+#grupo__mensaje {
     width: 100%;
     height: 100px;
-} 
+}
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 .formulario__input-error {
-	font-size: 12px;
-	margin-bottom: 0;
-	display: none;
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
     position: absolute;
-    
 }
 
 .formulario__input-error-activo {
-	display: block;
+    display: block;
 }
 
 .formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	font-size: 16px;
-	opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    font-size: 16px;
+    opacity: 0;
 }
 
 .formulario__checkbox {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
-.formulario__grupo-terminos, 
+.formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-	grid-column: span 2;
+    grid-column: span 2;
 }
 
 .formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
+    min-height: 45px;
+    height: max-content;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
 }
 
 .formulario__mensaje-activo {
-	display: block;
+    display: block;
 }
 
 .formulario__mensaje p {
-	margin: 0;
+    margin: 0;
 }
 
 .formulario__btn {
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	border-radius: 3px;
-    width: 90%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 97%;
     padding: 1em;
-	}
+}
 
 .formulario__grupo-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
+    font-size: 14px;
+    color: #119200;
+    display: none;
 }
 
 .formulario__mensaje-exito-activo {
-	display: block;
+    display: block;
 }
 
 /* ---------  estilos para validacion --------- */
 .formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
+    color: #1ed12d;
+    opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+    color: #bb2929;
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
+    color: #bb2929;
+    opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
+    border: 3px solid #bb2929;
 }
 
 /*fin JS*/
@@ -321,27 +265,22 @@ footer h2 {
     transition: 1s ease-in-out;
 }
 
-.nav-list li:hover,
-.logo:hover,
-.valor:hover,
-.casos:hover,
-.conocenos:hover,
-.contactanos:hover {
-    background: rgba(65, 105, 225, 0.171);
-    color: #fff;
-    transition: 0.5s ease-in-out;
+
+.contenedor .maps {
+    grid-area: maps;
 }
 
-.redes i:hover {
-    color: rgb(65, 105, 225) !important;
+.maps iframe {
+    border: #00bfa5 solid 4px;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+    width: 99%;
+    height: 40vh;
 }
 
-.footer{
-    border: 0 !important;
+.contenedor .footer {
+    grid-area: footer;
 }
-
-/*  FIN     contact     form    */
-
 
 /******************
     Media  Queeries
@@ -354,17 +293,19 @@ footer h2 {
             "section section section"
             "codear-info codear-info codear-info"
             "contact contact contact"
+            "maps maps maps"
             "footer footer footer";
+        gap: 0;
     }
 
-
-    /* Pasé todo lo relativo a header y footer a header_footer.css */
-  
-
-    .conocenos,
-    .contactanos {
-        padding: 16px;
+    .codear-info {
+        margin-bottom: 0;
     }
+
+    .contact {
+        margin-top: 0;
+    }
+
 }
 
 
@@ -375,23 +316,19 @@ footer h2 {
             "section section section"
             "codear-info codear-info codear-info"
             "contact contact contact"
+            "maps maps maps"
             "footer footer footer";
-        grid-gap: 20px;
     }
 
     .codear-info {
-        background: rgb(97, 177, 243);
         grid-area: codear-info;
         letter-spacing: 3px;
     }
 
-    form p {
+    .contact form div {
         display: grid;
         grid-column: 1/3;
     }
-
-    /* Pasé todo lo relativo a header y footer a header_footer.css */
-
 }
 
 
@@ -404,15 +341,7 @@ footer h2 {
             "section section section"
             "codear-info codear-info codear-info"
             "contact contact contact"
+            "maps maps maps"
             "footer footer footer";
-        grid-gap: 20px;
-    }
-
-    .codear-info {
-        background: rgb(97, 177, 243);
-        grid-area: codear-info;
-        letter-spacing: 3px;
     }
 }
-
-/*jsstyle*/

@@ -7,25 +7,14 @@
 }
 
 body {
-    color: #000;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-index);
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 .contenedor {
     width: 100%;
-    /* margin: 0 auto; */
-    /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    row-gap: 20px;
-    /*nos ahorramos tenes que poner márgenes entre los elementos*/
-    
-    /*3 columnas: section (con 2 widgets) - sidebar*/
     grid-template-columns: repeat(3, 1fr);
-
-    /*4 filas: header, section, contact-form, footer*/
     grid-template-rows: repeat(4, auto);
 
     grid-template-areas: "header header header"
@@ -37,15 +26,8 @@ body {
 /****************
     MAIN STYLES
 *****************/
-/* .contenedor>div, */
-.contenedor .header
-/*, .contenedor .section, */
-/* .contenedor .slider, */
-/* .contenedor .section-2 .contenedor .carrousel, */
-/* .contenedor .section-4  */
-{
+.contenedor .header {
     padding: 20px;
-    /* border-radius: 4px; */
 }
 
 .contenedor .section-1,
@@ -62,37 +44,37 @@ body {
 }
 
 /* Seccion 1 */
-.contenedor .section-1 h1{
+.contenedor .section-1 h1 {
     font-size: 5rem;
     font-weight: 900;
     text-align: center;
 }
 
-.contenedor .section-1 h2{
+.contenedor .section-1 h2 {
     text-align: center;
     margin: 2em 0 5em 0;
     font-weight: 800;
 }
 
-.contenedor .section-1 h1 span{
+.contenedor .section-1 h1 span {
     color: var(--text-span);
 }
 
 .section-1 h1,
 .section-1 h2,
 .section-1>h3,
-.section-1 h4{
-    color: var(--text-P) !important;
+.section-1 h4 {
+    color: var(--text-p);
 }
 
 .contenedor .section-1 p,
-.contenedor .section-1 h3{
+.contenedor .section-1 h3 {
     text-align: center;
     margin: 2em;
 }
 
-.contenedor .section-1 .valor_cards{
-    display:flex;
+.contenedor .section-1 .valor_cards {
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding-top: 3em;
@@ -101,12 +83,12 @@ body {
 .section-1 .valor1,
 .section-1 .valor2,
 .section-1 .valor3 {
-    background-color:var(--background-card_values);
+    background-color: var(--background-card_values);
     border: #000 solid 1px;
     max-width: 400px;
     padding-top: 30px;
     margin: 1em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
@@ -116,14 +98,14 @@ body {
 
 .section-1 .valor1 .title1,
 .section-1 .valor2 .title2,
-.section-1 .valor3 .title3{
+.section-1 .valor3 .title3 {
     font-size: larger;
     font-style: italic;
 }
 
 .valor1:hover,
 .valor2:hover,
-.valor3:hover{
+.valor3:hover {
     background-color: var(--background-hover);
     transform: scale(1.05);
     color: #333;
@@ -195,8 +177,13 @@ body {
 }
 
 @keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
 
     25% {
         margin-left: -100%;
@@ -223,27 +210,28 @@ body {
     }
 }
 
+
 /* Seccion 3 */
-.contenedor .carrousel{
+.contenedor .carrousel {
     background-color: var(--background-index);
     overflow: hidden;
     padding: 2em;
-    color: var(--text-P);
+    color: var(--text-p);
 }
 
-.carrousel h1{
+.carrousel h1 {
     text-align: center;
     font-size: 4em;
     font-weight: 70;
 }
 
-.carrousel .grande{
+.carrousel .grande {
     width: 300%;
     min-width: fit-content;
     background: space;
     display: flex;
     flex-flow: row nowrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     border-radius: 5px;
     /* Transición del carrousel */
@@ -251,24 +239,24 @@ body {
     transform: translateX(0%);
 }
 
-.carrousel .opiniones{
-    max-width:400px;
+.carrousel .opiniones {
+    max-width: 400px;
     line-height: 1.8;
     padding: 3rem;
-
 }
 
-.grande p{
+.grande p {
     padding-bottom: 1em;
     text-align: justify;
 }
 
-.grande h4, .grande h3{
+.grande h4,
+.grande h3 {
     text-align: right;
     padding-right: 3rem;
 }
 
-.carrousel .puntos{
+.carrousel .puntos {
     width: 100%;
     margin: 1em 0 0 0;
     padding: .4em;
@@ -279,14 +267,14 @@ body {
     list-style-type: none;
 }
 
-.carrousel .punto{
+.carrousel .punto {
     width: 2em;
     height: 2em;
     margin: .2em;
 }
 
-.carrousel .punto.activo i{
-    color: var(--background-nav) !important;
+.contenedor .carrousel .punto.activo i {
+    color: var(--text-span);
 }
 
 
@@ -296,22 +284,18 @@ body {
     background: var(--background-main-index);
 }
 
-.contenedor .section-4 h1{
+.contenedor .section-4 h1 {
     text-align: center;
     margin-bottom: 70px;
-    color: var(--text-P);
+    color: var(--text-p);
     font-size: 4em;
     font-weight: 70;
 }
 
-.contenedor .section-4 .slide-block img{
+.contenedor .section-4 .slide-block img {
     object-fit: contain;
 }
 
-
-
-/********/
-/********/
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -323,7 +307,6 @@ body {
 }
 
 .contenedor .section-4 .slider-block {
-    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -366,7 +349,6 @@ body {
 
 .contenedor .section-4 .slider-block {
     background: transparent;
-    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -385,7 +367,7 @@ body {
 }
 
 .contenedor .carrousel span,
-.contenedor .section-4 span{
+.contenedor .section-4 span {
     color: var(--text-span);
     font-weight: 700;
 }
@@ -405,11 +387,9 @@ body {
     letter-spacing: 1px;
     padding: 20px;
     border-radius: 4px 0 0 4px;
-    }
+}
 
-.codear-info span,
-.header span,
-footer span {
+.codear-info span {
     color: aliceblue;
 }
 
@@ -427,9 +407,7 @@ footer span {
     text-align: left;
 }
 
-.codear-info h2,
-.header h2,
-footer h2 {
+.codear-info h2 {
     color: var(--text-tech);
 }
 
@@ -478,8 +456,8 @@ footer h2 {
     font-weight: 800;
 }
 
-/******ANIMACIÓN/TRANSICIÓN********/
 
+/******ANIMACIÓN/TRANSICIÓN********/
 .contact button:hover,
 .contact button:focus {
     background: rgb(1, 62, 160);
@@ -487,20 +465,6 @@ footer h2 {
     transition: 1s ease-in-out;
 }
 
-.nav-list li:hover,
-.logo:hover,
-.valor:hover,
-.casos:hover,
-.conocenos:hover,
-.contactanos:hover {
-    background: rgba(65, 105, 225, 0.171);
-    color: #fff;
-    transition: 0.5s ease-in-out;
-}
-
-.redes i:hover {
-    color: rgb(22, 53, 104) !important;
-}
 /*  FIN     contact     form    */
 
 
@@ -516,16 +480,14 @@ footer h2 {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-            gap: 0;
+        gap: 0;
     }
 
-    /* Pasé todo lo relativo a header y footer a header_footer.css */
-
-    .codear-info{
+    .codear-info {
         margin-bottom: 0;
     }
 
-    .contact{   
+    .contact {
         margin-top: 0;
     }
 
@@ -544,20 +506,15 @@ footer h2 {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-        /* grid-gap: 20px; */
     }
 
 
-    .contenedor .section-1 h1{
+    .contenedor .section-1 h1 {
         font-size: 3em;
     }
 
     .nombreseccion a {
-        text-decoration: none;
-        color: white;
         letter-spacing: 0;
-        background-color: #7171718a;
-        border-radius: 5px;
     }
 
     .contenedor .section-4 .slider-block::before,
@@ -566,7 +523,6 @@ footer h2 {
     }
 
     .codear-info {
-        background: rgb(97, 177, 243);
         grid-area: codear-info;
         letter-spacing: 3px;
     }
@@ -575,9 +531,6 @@ footer h2 {
         display: grid;
         grid-column: 1/3;
     }
-
-    /* Pasé todo lo relativo a header y footer a header_footer.css */
-
 }
 
 
@@ -591,36 +544,34 @@ footer h2 {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-        /* grid-gap: 20px; */
     }
 
-    .contenedor .section-1{
+    .contenedor .section-1 {
         padding: 15px;
     }
 
-    .contenedor .section-1 h1{
+    .contenedor .section-1 h1 {
         font-size: 2rem;
     }
 
-
     .contenedor .section-1 p,
     .contenedor .section-1 h2,
-    .contenedor .section-1 h3{
+    .contenedor .section-1 h3 {
         font-size: larger;
     }
 
-    .contenedor .carrousel{
+    .contenedor .carrousel {
         padding: 20px 5px;
     }
 
-    .carrousel .grande{
+    .carrousel .grande {
         align-items: baseline;
     }
 
     .carrousel h1,
-    .contenedor .section-4 h1{
+    .contenedor .section-4 h1 {
         font-size: 1.5rem;
-}
+    }
 
     .codear-info {
         grid-area: codear-info;
