@@ -17,7 +17,7 @@ Nos presentamos aportando valor
 En total somos cuatro integrantes dedicados a este proyecto...
 
 <picture>
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="assets/imgs/readme-web-03.png">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="assets/imgs/readme-web-03.png" style:"width=200px">
 </picture>
 
 Nos presentamos aportando valor y elevando el potencial de nuestros clientes. 
