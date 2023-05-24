@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    css     -->
+    <link rel="stylesheet" href="css/contact_us.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/mode_dark_light.css">
@@ -95,7 +96,7 @@
                     <li class="img_y_texto">
                         <img src="assets/imgs/Contact_us.jpg" alt="contacto">
                         <h2 class="nombreseccion">
-                            <a href="#">
+                            <a href="contact_us.html">
                                 Contactanos
                         </h2>
                         </a>
@@ -103,7 +104,7 @@
                     <li class="img_y_texto">
                         <img src="assets/imgs/codea.png" alt="busqueda_trabajo">
                         <h2 class="nombreseccion">
-                            <a href="#">¡Codeá con nosotros!
+                            <a href="codeemos.html">¡Codeá con nosotros!
                         </h2>
                         </a>
                     </li>
@@ -260,33 +261,94 @@
         </div>
 
         <div class="contact">
-            <h3>Contact us</h3>
             <br>
-            <form>
-                <p>
-                    <label><i>NAME</i></label>
-                    <input type="text" name="name" required placeholder="n a m e . . .">
-                </p>
-                <p>
-                    <label><i>COMPANY</i></label>
-                    <input type="text" name="company" required placeholder="c o m p a n y . . .">
-                </p>
-                <p>
-                    <label><i>EMAIL</i></label>
-                    <input type="email" name="email" required placeholder="e m a i l . . .">
-                </p>
-                <p>
-                    <label><i>PHONE NUMBER</i></label>
-                    <input type="text" name="phone" placeholder="p h o n e . . .">
-                </p>
-                <p class="full">
-                    <label><i>MESSAGE</i></label>
-                    <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
-                </p>
-                <p class="full">
-                    <button type="submit">Submit</button>
-                </p>
+            <form action="https://formspree.io/f/xeqwdyjo" method="POST" class="formulario" id="formulario"
+                autocomplete="off">
+
+                <!-- NOMBRE -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Apellido y Nombre
+                        <span>*</span>
+                    </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" required
+                            placeholder="n o m b r e   c o m p l e t o . . .">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El apellido y nombre debe ocupar de 3 a 16 dígitos y solo puede
+                        contener letras.</p>
+                </div>
+
+                <!-- COMPAÑIA -->
+                <div class="formulario__grupo" id="grupo__compania">
+                    <label for="compania" class="formulario__label">Empresa
+                        <span>*</span>
+                    </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="compania" id="compania" required
+                            placeholder="e m p r e s a . . .">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre de la compañia debe ocupar de 2 a 16 dígitos y solo
+                        puede contener letras.</p>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Email
+                        <span>*</span>
+                    </label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" required
+                            placeholder="e m a i l . . .">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos y guiones.
+                    </p>
+                </div>
+
+                <!-- TELEFONO -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="n u m e r o . . .">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14
+                        dígitos.</p>
+                </div>
+
+                <!-- MENSAJE -->
+
+                <div class="formulario__grupo" id="grupo__mensaje">
+                    <label for="mensaje" class="formulario__label">Mensaje
+                        <span>*</span>
+                    </label>
+                    <div class="formulario__grupo-input">
+                        <input name="mensaje" cols="30" type="text" class=" formulario__input" id="mensaje" required
+                            placeholder="m e n s a j e . . .">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+
+                    <p class="formulario__input-error">El mensaje tiene que ser de 10 a 70 dígitos y solo puede contener
+                        letras.</p>
+                </div>
+
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                        correctamente. </p>
+                </div>
+
+                <div class="formulario__grupo" id="formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                        exitosamente!</p>
+                </div>
+
             </form>
+
         </div>
 
         <!--    contact     form    -->
@@ -297,6 +359,7 @@
 
     </div>
     <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/contact_us-fspree.js" type="text/javascript"></script>
     <script src="./js/index.js" type="text/javascript"></script>
 
 </body>
