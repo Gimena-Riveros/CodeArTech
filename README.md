@@ -24,10 +24,6 @@ Nos presentamos aportando valor y elevando el potencial de nuestros clientes.
 
 ## Casos de Exito 
 
-<picture>
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="assets/imgs/readme-web-05.jpg">
-</picture>
-
 Presentamos a clientes que confiaron en nosotros. 
 
 ## Contactenos 
