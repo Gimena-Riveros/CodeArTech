@@ -60,4 +60,6 @@ Usamos Formspree, https://formspree.io/, esta API nos permite recibir en nuestro
 
 En Blog, cada articulo parece flotar levemente al pasar el mouse, y tenemos el botón ReadMore / ReadLess para expandir o colapsar cada articulo. 
 
+En toda la web tenemos modo Dark / Light, elegimos el color verde de base y complementamos con tonos de blanco y negro pero sin usar blanco y negro puro. 
+
 Y en toda la web contamos con un botón Up que aparece al hacer scroll que lleva al usuario al inicio de la pagina que este navegando. 
