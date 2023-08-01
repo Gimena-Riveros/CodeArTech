@@ -1,7 +1,7 @@
 # CodeAr Tech 2023
 
 ## Objetivo 
-Este repositorio  CodeAr  Tech  servicios  de  desarrollo web  es  el  TP0  a  presentar  en  Codo  a  Codo  FullStack Python desplegando las skills en FrontEnd adquiridas. Nuestra <a href="https://codeartech.github.io/">WEB</a> consta de cuatro paginas que presentaremos a continuacion:
+Este repositorio  CodeAr  Tech  servicios  de  desarrollo web  es  el  TP0  a  presentar  en  Codo  a  Codo  FullStack Python desplegando las skills FrontEnd incorporadas. Nuestra <a href="https://codeartech.github.io/" target="_blank">WEB</a> consta de cuatro paginas que presentaremos a continuacion:
 
 ### https://codeartech.github.io/
 
